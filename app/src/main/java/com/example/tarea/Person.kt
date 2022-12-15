@@ -19,4 +19,8 @@ class Person {
     fun getFecha(): String {
         return fecha;
     }
+    override fun toString(): String {
+        return "Person(id=$id, name='$name', fecha='$fecha')"
+    }
+
 }
