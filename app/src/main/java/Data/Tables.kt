@@ -1,15 +1,16 @@
 package Data
 
-import com.example.tarea.Person
+import com.example.tarea.model.Contact
 
 class Tables {
-    abstract class Persons {
+    abstract class Contacts {
         companion object {
             val _ID = "_id"
-            val TABLE_NAME = "persons"
-            val COLUMN_NAME = "name"
+            val TABLE_NAME = "contacts"
+            val COLUMN_EMAIL = "email"
             val COLUMN_FECHA = "fecha"
-            var persons: MutableList<Person> = ArrayList()
+            val COLUMN_PHONE = "telefono"
+            var contacts: MutableList<Contact> = ArrayList()
         }
     }
 }

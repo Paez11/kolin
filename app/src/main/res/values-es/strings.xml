@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarea</string>
+    <string name="next">siguiente</string>
+    <string name="previous">anterior</string>
+    <string name="action_instructions">instrucciones</string>
+    <string name="action_about">sobre mi</string>
+</resources>
