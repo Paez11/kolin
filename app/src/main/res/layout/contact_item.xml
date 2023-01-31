@@ -16,7 +16,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-                android:id="@+id/contactNameTV"
+                android:id="@+id/emailTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Victor@gmail.com"
@@ -25,20 +25,20 @@
                 tools:ignore="HardcodedText"/>
 
         <TextView
-                android:id="@+id/contactDateTV"
+                android:id="@+id/dateTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="12/11/2001"
                 android:textSize="17sp"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText"/>
+                tools:ignore="HardcodedText" android:layout_margin="3dp"/>
         <TextView
-                android:id="@+id/contactPhoneNumberTV"
+                android:id="@+id/phoneTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="3dp"
                 android:text="000000000"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"/>
     </LinearLayout>
 
     <View

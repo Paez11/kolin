@@ -1,9 +1,17 @@
 <resources>
-    <string name="app_name">Tarea</string>
+    <string name="app_name">Kolin</string>
     <!-- Strings used for fragments for navigation -->
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string name="action_instructions">Instructions</string>
     <string name="action_about">about</string>
+    <string name="info_activity_name">About</string>
+    <string name="name">victor paez anguita</string>
+    <string name="appName">Kolin</string>
+    <string name="version">1.0</string>
+    <string name="language">spanish, english</string>
+    <string name="devp">developer</string>
+    <string name="app">App Name</string>
+    <string name="languageM">Kolin</string>
 </resources>

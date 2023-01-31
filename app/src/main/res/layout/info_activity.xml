@@ -38,12 +38,13 @@
                     android:background="?attr/selectableItemBackground"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
+                    android:onClick="closeAbout"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_back"
+                    app:srcCompat="?attr/actionModeCloseDrawable"
                     app:tint="@color/white"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck"/>
             <TextView
                     android:id="@+id/activityNameTV"
                     android:layout_width="wrap_content"
@@ -79,7 +80,7 @@
                 android:id="@+id/developer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Desarrollador:"
+                android:text="@string/devp"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -99,7 +100,7 @@
                 android:id="@+id/Program"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre de la Aplicacion:"
+                android:text="@string/app"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -127,7 +128,7 @@
                 android:id="@+id/version_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ver"
+                android:text="@string/version"
                 android:textSize="27sp"
                 android:textStyle="normal" />
 
@@ -139,7 +140,7 @@
                 android:id="@+id/language"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lenguaje:"
+                android:text="@string/languageM"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -154,25 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="#000000" />
-        <TextView
-                android:id="@+id/idioma"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Idioma:"
-                android:textSize="30sp"
-                android:textStyle="bold" />
 
-        <TextView
-                android:id="@+id/Idioma_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/idioma"
-                android:textSize="27sp"
-                android:textStyle="normal" />
-        <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="#000000" />
 
     </LinearLayout>
 

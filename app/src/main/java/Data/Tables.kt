@@ -8,8 +8,8 @@ class Tables {
             val _ID = "_id"
             val TABLE_NAME = "contacts"
             val COLUMN_EMAIL = "email"
-            val COLUMN_FECHA = "fecha"
-            val COLUMN_PHONE = "telefono"
+            val COLUMN_DATE = "date"
+            val COLUMN_PHONE = "phone"
             var contacts: MutableList<Contact> = ArrayList()
         }
     }

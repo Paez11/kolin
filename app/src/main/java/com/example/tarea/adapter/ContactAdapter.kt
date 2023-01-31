@@ -1,5 +1,6 @@
 package com.example.tarea.adapter
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -9,32 +10,44 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tarea.R
 import com.example.tarea.model.Contact
+import com.example.tarea.ui.ClickListener
 
-class ContactAdapter(private val contactList: ArrayList<Contact>, private val onItemClicked: (Contact) -> Unit):  RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val name: TextView = view.findViewById(R.id.contactNameTV)
-        val date: DatePicker = view.findViewById(R.id.dateP)
-        val phone: TextView = view.findViewById(R.id.contactPhoneNumberTV)
-    }
+class ContactAdapter(private val onContactClickListener: ClickListener) : RecyclerView.Adapter<ContactAdapter.ContactViewHolder>() {
+    var contacts: ArrayList<Contact> = ArrayList()
+    lateinit var context: Context
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent, false)
-        return ViewHolder(view)
-    }
+    class ContactViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val contactName = view.findViewById(R.id.emailTextView) as TextView
+        val contactDate = view.findViewById(R.id.emailTextView) as TextView
+        val contactPhone = view.findViewById(R.id.phoneTextView) as TextView
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        runCatching {
-            holder.name.text = contactList[position].getEmail()
-            holder.date.maxDate = contactList[position].getdate()
-            holder.phone.text = contactList[position].getPhone().toString()
-            holder.itemView.setOnClickListener {
-                onItemClicked.invoke(contactList[position])
-            }
-
-        }.onFailure {
-            Log.e("ContactAdapter", it.message.toString())
+        fun bind(contact: Contact, context: Context){
+            contactName.text = contact.getEmail()
+            contactDate.text = contact.getDate()
+            contactPhone.text = contact.getPhone()
         }
     }
 
-    override fun getItemCount(): Int = contactList.size
+    fun ContactAdapter(contacts : ArrayList<Contact>, context: Context){
+        this.contacts = contacts
+        this.context = context
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
+        val layoutInflater = LayoutInflater.from(parent.context)
+        return ContactViewHolder(layoutInflater.inflate(R.layout.contact_item, parent, false))
+    }
+
+    override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
+        val item = contacts.get(position)
+        holder.bind(item, context)
+
+        holder.itemView.setOnClickListener{
+            onContactClickListener.onContactItemClicked(position)
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return contacts.size
+    }
 }

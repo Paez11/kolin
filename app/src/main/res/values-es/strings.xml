@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Tarea</string>
+    <string name="app_name">Kolin</string>
     <string name="next">siguiente</string>
     <string name="previous">anterior</string>
     <string name="action_instructions">instrucciones</string>
     <string name="action_about">sobre mi</string>
+    <string name="info_activity_name">sobre mi</string>
+    <string name="appName">Kolin</string>
+    <string name="language">españolo, ingles</string>
+    <string name="devp">desarrollador</string>
+    <string name="app">Nombre de la App</string>
+    <string name="languageM">Idioma</string>
 </resources>

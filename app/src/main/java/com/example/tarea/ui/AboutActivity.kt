@@ -1,14 +1,11 @@
 package com.example.tarea.ui
 
-import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tarea.R
-import com.example.tarea.databinding.InfoActivityBinding
 
-
-class InfoActivity: AppCompatActivity() {
+class AboutActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
