@@ -5,13 +5,43 @@
     <string name="previous">Previous</string>
 
     <string name="action_instructions">Instructions</string>
-    <string name="action_about">about</string>
+    <string name="action_about">About</string>
     <string name="info_activity_name">About</string>
-    <string name="name">victor paez anguita</string>
+    <string name="name" translatable="false">victor paez anguita</string>
     <string name="appName">Kolin</string>
-    <string name="version">1.0</string>
+    <string name="version" translatable="false">Version</string>
     <string name="language">spanish, english</string>
     <string name="devp">developer</string>
     <string name="app">App Name</string>
-    <string name="languageM">Kolin</string>
+    <string name="languageM">Language</string>
+    <string name="instructions_activity_name">Instructions</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="newTxt">New</string>
+    <string name="phone">Phone</string>
+    <string name="date">Date</string>
+    <string name="mainTxt">"The first view of the app is a list with all the contacts you have save during the app. As
+        you can see in the botton right of the view you can see a button to add new contacts \n \n \n \n \n \n \n "
+    </string>
+    <string name="formTxt">"If you have press the add button you will go to the form view where you can put the fields
+        of the new contact. Then you have a button to save it, just in the botton left\n \n \n \n "
+    </string>
+    <string name="updateTxt">"For this view you just have to press a contact in the main view (where you can see all the
+        contacts). The you will go to the same view for create new contacts but this time you can see two buttons
+        (update and remove) And the fields full fill with the data of the contact\n \n \n \n \n "
+    </string>
+    <string name="modify">Update</string>
+    <string name="requiereFields">Please, enter requieres fields</string>
+    <string name="update">update</string>
+    <string name="attentionU">Attention, updating contact</string>
+    <string name="updateContact">Are you sure to update the contact?</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="saveContact">Contact save successfully</string>
+    <string name="notSaveContact">Not save contact</string>
+    <string name="invalidPhone">Invalid phone number</string>
+    <string name="attentionR">Attention, removing contact</string>
+    <string name="removeContact">Are you sure to remove the contact?</string>
+    <string name="rC">Contact remove successfully</string>
+    <string name="versionNumber" translatable="false">1.0</string>
 </resources>

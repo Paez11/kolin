@@ -15,7 +15,17 @@
         <activity
                 android:name=".ui.AboutActivity"
                 android:exported="false"
+                android:theme="@style/NoActionBar"
                 android:label="@string/action_about">
+            <meta-data
+                    android:name="android.app.lib_name"
+                    android:value="" />
+        </activity>
+        <activity
+                android:name=".ui.InstructionsActivity"
+                android:exported="false"
+                android:theme="@style/NoActionBar"
+                android:label="@string/action_instructions">
             <meta-data
                     android:name="android.app.lib_name"
                     android:value="" />

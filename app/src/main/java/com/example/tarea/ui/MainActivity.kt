@@ -25,12 +25,12 @@ class MainActivity: AppCompatActivity(), ClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-        //loadData()
+        loadData()
     }
 
     override fun onResume() {
         super.onResume()
-        //loadData()
+        loadData()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -40,7 +40,7 @@ class MainActivity: AppCompatActivity(), ClickListener {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.action_instructions -> startActivity(Intent(this, AboutActivity::class.java))
+            R.id.action_instructions -> startActivity(Intent(this, InstructionsActivity::class.java))
             R.id.action_about -> startActivity(Intent(this, AboutActivity::class.java))
         }
         return super.onOptionsItemSelected(item)

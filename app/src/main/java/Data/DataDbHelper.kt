@@ -19,7 +19,7 @@ class DataDbHelper (context: Context): SQLiteOpenHelper(context, DATABASE_NAME, 
                 Tables.Contacts._ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 Tables.Contacts.COLUMN_EMAIL + " TEXT NOT NULL," +
                 Tables.Contacts.COLUMN_PHONE + " TEXT NOT NULL," +
-                Tables.Contacts.COLUMN_DATE + " TEXT NOT NULL,");
+                Tables.Contacts.COLUMN_DATE + " TEXT NOT NULL)");
         db?.execSQL(createTblContacts)
     }
 
@@ -77,7 +77,7 @@ class DataDbHelper (context: Context): SQLiteOpenHelper(context, DATABASE_NAME, 
     @SuppressLint("Range")
     fun getAllContacts(): ArrayList<Contact> {
         val contacts: ArrayList<Contact> = ArrayList()
-        val query = "SELECT * FROM "+Tables.Contacts.TABLE_NAME+" ORDER BY name"
+        val query = "SELECT * FROM "+Tables.Contacts.TABLE_NAME+" ORDER BY email"
         val db = this.readableDatabase
         val cursor: Cursor?
 
@@ -91,15 +91,17 @@ class DataDbHelper (context: Context): SQLiteOpenHelper(context, DATABASE_NAME, 
 
         var id: Int
         var email: String
+        var date: String
         var phone: String
 
         if(cursor.moveToFirst()) {
             do {
                 id=cursor.getInt(cursor.getColumnIndex(Tables.Contacts._ID))
                 email=cursor.getString(cursor.getColumnIndex(Tables.Contacts.COLUMN_EMAIL))
+                date=cursor.getString(cursor.getColumnIndex(Tables.Contacts.COLUMN_DATE))
                 phone=cursor.getString(cursor.getColumnIndex(Tables.Contacts.COLUMN_PHONE))
 
-                val contact = Contact(id=id, email=email, phone=phone)
+                val contact = Contact(id=id, email=email,date=date, phone=phone)
                 contacts.add(contact)
             }while(cursor.moveToNext())
         }

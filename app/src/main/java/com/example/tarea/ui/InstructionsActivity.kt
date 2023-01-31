@@ -2,18 +2,18 @@ package com.example.tarea.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tarea.R
-import com.example.tarea.databinding.InfoActivityBinding
+import com.example.tarea.databinding.InstructionsActivityBinding
 
-class InfoActivity: AppCompatActivity() {
-
+class InstructionsActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.info_activity)
+        setContentView(R.layout.instructions_activity)
     }
 
-    fun closeAbout(view: View){
+    fun closeInstructions(view: View){
         finish()
     }
 }

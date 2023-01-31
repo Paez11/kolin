@@ -11,4 +11,34 @@
     <string name="devp">desarrollador</string>
     <string name="app">Nombre de la App</string>
     <string name="languageM">Idioma</string>
+    <string name="instructions_activity_name">Instrucciones</string>
+    <string name="save">Guardar</string>
+    <string name="remove">Eliminar</string>
+    <string name="newTxt">Nuevo</string>
+    <string name="phone">Teléfono</string>
+    <string name="date">Fecha</string>
+    <string name="mainTxt">"La primera vista de la aplicación es una lista con todos los contactos que ha guardado
+        durante la aplicación. Como puede ver en la parte inferior derecha de la vista, puede ver un botón para
+        agregarbnuevos contactos\n \n \n \n "
+    </string>
+    <string name="formTxt">"Si ha presionado el botón Agregar, irá a la vista de formulario donde puede colocar los
+        campos del nuevo contacto. Luego tienes un botón para guardarlo, justo en la parte inferior izquierda\n \n "
+    </string>
+    <string name="updateTxt">"Para esta vista solo tienes que pulsar un contacto en la vista principal (donde puedes
+        ver,todos los contactos). Irá a la misma vista para crear nuevos contactos, pero esta vez puede ver dos botones
+        (actualizar y eliminar) Y los campos llenos se llenan con los datos del contacto\n \n "
+    </string>
+    <string name="modify">Actualizar</string>
+    <string name="update">Actualizar</string>
+    <string name="requiereFields">Por favor, introduzca campos requeridos</string>
+    <string name="attentionU">Atención, actualizando contacto</string>
+    <string name="updateContact">¿Seguro que quieres actualizar el contacto?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="saveContact">Contacto guardado correctamente</string>
+    <string name="notSaveContact">Contacto no guardado</string>
+    <string name="invalidPhone">Número de teléfono invalido</string>
+    <string name="attentionR">Atención, eliminando contacto</string>
+    <string name="removeContact">¿Seguro que quieres eliminar el contacto?</string>
+    <string name="rC">Contacto eliminado correctamente</string>
 </resources>

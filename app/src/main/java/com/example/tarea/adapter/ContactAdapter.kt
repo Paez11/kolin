@@ -17,12 +17,12 @@ class ContactAdapter(private val onContactClickListener: ClickListener) : Recycl
     lateinit var context: Context
 
     class ContactViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val contactName = view.findViewById(R.id.emailTextView) as TextView
-        val contactDate = view.findViewById(R.id.emailTextView) as TextView
+        val contactEmail = view.findViewById(R.id.emailTextView) as TextView
+        val contactDate = view.findViewById(R.id.dateTextView) as TextView
         val contactPhone = view.findViewById(R.id.phoneTextView) as TextView
 
         fun bind(contact: Contact, context: Context){
-            contactName.text = contact.getEmail()
+            contactEmail.text = contact.getEmail()
             contactDate.text = contact.getDate()
             contactPhone.text = contact.getPhone()
         }
